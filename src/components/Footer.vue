@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import logo from '@/components/icons/logo.vue' ;
-import facebook from '@/components/icons/facebook.vue' ;
-import instagram from '@/components/icons/instagram.vue' ;
-import twitter from '@/components/icons/twitter.vue' ;
-import youtube from '@/components/icons/youtube.vue' ;
+import logo from '@/components/icons/logo.vue' ; /*a modifier*/
+import facebook from '@/components/icons/FacebookIcon.vue' ;
+import instagram from '@/components/icons/InstagramIcon.vue' ;
+import twitter from '@/components/icons/TwitterIcon.vue' ;
+import youtube from '@/components/icons/YoutubeIcon.vue' ;
+
 </script>
 
 <template>
@@ -32,16 +33,16 @@ import youtube from '@/components/icons/youtube.vue' ;
         <h4>Nous suivre</h4>
         <ul>
           <li>
-            <a href="https://facebook.com" aria-label="facebook"> </a>
+            <a href="https://facebook.com" aria-label="facebook"> <facebook></facebook> </a>
           </li>
           <li>
-            <a href="https://instagram.com" aria-label="instagram"> </a>
+            <a href="https://instagram.com" aria-label="instagram"> <instagram></instagram> </a>
           </li>
           <li>
-            <a href="https://twitter.com" aria-label="twitter"> </a>
+            <a href="https://twitter.com" aria-label="twitter"> <twitter></twitter> </a>
           </li>
           <li>
-            <a href="https://youtube.com" aria-label="youtube"> </a>
+            <a href="https://youtube.com" aria-label="youtube"> <youtube></youtube> </a>
           </li>
         </ul>
       </div>
