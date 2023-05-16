@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import logo from '@/components/icons/logo.vue' ; /*a modifier*/
-import facebook from '@/components/icons/FacebookIcon.vue' ;
-import instagram from '@/components/icons/InstagramIcon.vue' ;
-import twitter from '@/components/icons/TwitterIcon.vue' ;
-import youtube from '@/components/icons/YoutubeIcon.vue' ;
+import FacebookIcon from '@/components/icons/IconFacebook.vue' ;
+import InstagramIcon from '@/components/icons/IconInstagram.vue' ;
+import TwitterIcon from '@/components/icons/IconTwitter.vue' ;
+import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
 
 </script>
 
@@ -33,16 +33,16 @@ import youtube from '@/components/icons/YoutubeIcon.vue' ;
         <h4>Nous suivre</h4>
         <ul>
           <li>
-            <a href="https://facebook.com" aria-label="facebook"> <facebook></facebook> </a>
+            <a href="https://facebook.com" aria-label="facebook"> <FacebookIcon /> </a>
           </li>
           <li>
-            <a href="https://instagram.com" aria-label="instagram"> <instagram></instagram> </a>
+            <a href="https://instagram.com" aria-label="instagram"> <InstagramIcon /> </a>
           </li>
           <li>
-            <a href="https://twitter.com" aria-label="twitter"> <twitter></twitter> </a>
+            <a href="https://twitter.com" aria-label="twitter"> <TwitterIcon /> </a>
           </li>
           <li>
-            <a href="https://youtube.com" aria-label="youtube"> <youtube></youtube> </a>
+            <a href="https://youtube.com" aria-label="youtube"> <YoutubeIcon /> </a>
           </li>
         </ul>
       </div>
