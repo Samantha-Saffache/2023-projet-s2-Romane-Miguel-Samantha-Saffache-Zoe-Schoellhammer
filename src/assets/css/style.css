@@ -5,21 +5,21 @@
 
 @layer base {
     body {
-      @apply font-sans text-base leading-normal;
+      @apply ;
     }
     h1 {
-      @apply text-4xl font-serif leading-tight lg:text-6xl;
+      @apply ;
     }
     h2 {
-      @apply text-2xl font-serif leading-tight lg:text-4xl;
+      @apply text-2xl font-unbounded;
     }
     h3 {
-      @apply text-xl font-serif leading-tight;
+      @apply ;
     }
     ::-moz-selection {
-      @apply bg-pink;
+      @apply ;
     }
     ::selection {
-      @apply bg-pink;
+      @apply ;
     }
   }

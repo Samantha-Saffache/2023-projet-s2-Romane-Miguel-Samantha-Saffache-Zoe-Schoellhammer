@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logo from '@/components/icons/logo.vue' ; /*a modifier*/
+import logo from '@/components/icons/Logo.vue' ; /*a modifier*/
 import FacebookIcon from '@/components/icons/IconFacebook.vue' ;
 import InstagramIcon from '@/components/icons/IconInstagram.vue' ;
 import TwitterIcon from '@/components/icons/IconTwitter.vue' ;
@@ -19,7 +19,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
       </nav>
   
       <div>
-        <h4>Contact</h4>
+        <h4 class="text-orange-unbounded">Contact</h4>
         <address>
             41 Place Brogolie<br />67000 Strasbourg<br />
           <a href="tel:0384542727">03 84 54 27 27</a><br />
