@@ -19,7 +19,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
       </nav>
   
       <div>
-        <h4 class="text-orange-unbounded">Contact</h4>
+        <h4 class="text-orange">Contact</h4>
         <address>
             41 Place Brogolie<br />67000 Strasbourg<br />
           <a href="tel:0384542727">03 84 54 27 27</a><br />
