@@ -2,14 +2,15 @@
   //a modifier avec nos icones !! //
   // logo à importer//
 	// icone recherche à importer //
+  import Logo from '@/components/icons/Logo.vue';
   import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white px-6 py-2 transition-all duration-300 ease-in-out">
     <div class="flex items-center">
-      <a href="/">
-        <LogoIcon />
+      <a class="block w-12 h-12" href="/">
+        <Logo />
       </a>
     </div>
 
