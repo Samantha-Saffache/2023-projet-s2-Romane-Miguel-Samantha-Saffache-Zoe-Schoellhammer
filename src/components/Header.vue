@@ -1,11 +1,11 @@
 <script setup lang="ts">
 //a modifier avec nos icones !! //
-	import LogoIcon from '@/components/icons/IconLogo.vue'
-	import SearchIcon from '@/components/icons/IconSearch.vue'
+// logo à importer//
+	// icone recherche à importer //
 </script>
 
 <template>
-  <header>
+  <Header>
     <div>
       <a href="/">
         <LogoIcon />

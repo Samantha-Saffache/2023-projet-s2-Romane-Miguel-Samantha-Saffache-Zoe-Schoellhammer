@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-3xl text-orange font-unbounded  ;
+  }
+}
 
 @layer base {
-    body {
-      @apply ;
-    }
-    h1 {
-      @apply ;
-    }
-    h2 {
-      @apply text-2xl font-unbounded;
-    }
-    h3 {
-      @apply ;
-    }
-    ::-moz-selection {
-      @apply ;
-    }
-    ::selection {
-      @apply ;
-    }
+  h4 {
+    @apply text-2xl text-orange font-unbounded font-bold uppercase ;
   }
+}
+
+
+
+
+
+
+
+

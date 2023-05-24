@@ -10,11 +10,11 @@ export default {
   theme: {
 
     "colors": {
-      "Vert": "#bcd46e",
+      "vert": "#bcd46e",
       "orange": "#be7015",
       "jaune fonce": "#efdd7d",
       "beige": "#f7f8c4",
-      "FOND": "#faebda",
+      "fond": "#faebda",
       "fond footer": "#ffffff"
      },
      "fontSize": {
@@ -56,8 +56,8 @@ export default {
       "15xl": "3.3125rem",
       "16xl": "3.375rem",
       "17xl": "3.4375rem",
-      "18xl": "3.5rem"
-     }
+      "18xl": "3.5rem",
+     },
 
     extend: {},
   },
