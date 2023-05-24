@@ -14,7 +14,15 @@
   }
 }
 
+@layer components {
+  .grille {
+    @apply px-6 lg:justify-center lg:gap-12;
+  }
+  .menu-link {
+    @apply block px-5 py-4;
+  }
 
+}
 
 
 
