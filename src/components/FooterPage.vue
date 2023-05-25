@@ -1,5 +1,4 @@
 <script setup lang="ts">
- /*logo à importer*/
  import Logo from '@/components/icons/Logo.vue';
 import FacebookIcon from '@/components/icons/IconFacebook.vue' ;
 import InstagramIcon from '@/components/icons/IconInstagram.vue' ;
@@ -10,7 +9,9 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
 
 <template>
     <footer class="grille lg:space-y-0">
-      <!--logo footer icone-->
+      <a class="block w-20 h-20" href="/">
+        <Logo />
+      </a>
       <nav class="col-span-3 col-start-7 space-y-3">
         <h4>MENU</h4>
         <ul>

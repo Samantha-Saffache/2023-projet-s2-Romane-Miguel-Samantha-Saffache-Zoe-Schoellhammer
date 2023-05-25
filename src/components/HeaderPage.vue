@@ -1,37 +1,64 @@
 <script setup lang="ts">
-  //a modifier avec nos icones !! //
-  // logo à importer//
-	// icone recherche à importer //
+	import { ref, computed, watch } from 'vue';
   import Logo from '@/components/icons/Logo.vue';
-  import { RouterLink } from 'vue-router'
+  import SearchIcon from '@/components/icons/IconSearch.vue';
+  import { RouterLink } from 'vue-router';
+  const activeMenu = ref(false)
+
+function closeMenu() {
+  activeMenu.value = false
+}
 </script>
 
 <template>
-  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white px-6 py-2 transition-all duration-300 ease-in-out">
+  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white
+  px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
     <div class="flex items-center">
       <a class="block w-12 h-12" href="/">
         <Logo />
       </a>
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 lg:flex-row-reverse">
       <button>
-        // icone à placer //
+       <SearchIcon />
       </button>
 
-      <button>
-        <div></div>
-        <div></div>
-        <div></div>
+      <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden"
+      @click="activeMenu = !activeMenu">
+        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
+         :class="{ 'translate-y-[9px] rotate-45 bg-black': activeMenu }"
+         ></div>
+        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
+        :class="{ 'bg-black opacity-0': activeMenu }"
+        ></div>
+        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
+        :class="{ '-translate-y-[9px] -rotate-45 bg-black': activeMenu }"
+        ></div>
       </button>
 
-			<nav class="fixed inset-0 h-screen w-screen text-2xl text-white transition-all duration-300 ease-in-out">
-		    <ul>
-		      <li><RouterLink class="menu-link" to="/mes-notifications">Mes notifications</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/decouvrir">Découvrir</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/mes-favoris">Mes favoris</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/mon-compte">Mon compte</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/messagerie">Messagerie</RouterLink></li>
+			<nav class="invisible opacity-0 fixed inset-0 h-screen w-screen text-2xl text-white transition-all duration-300 ease-in-out lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-bold lg:uppercase lg:tracking-wide lg:text-black lg:opacity-100"
+      :class="{ '!visible opacity-100': activeMenu }"
+        v-scroll-lock="activeMenu"
+        >
+        
+		    <ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
+		      <li class="menu-item">
+            <RouterLink class="menu-link" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
+          </li>
+		      <li class="menu-item">
+            <RouterLink class="menu-link" to="/decouvrir" 	@click="closeMenu">Découvrir</RouterLink>
+          </li>
+		      <li class="menu-item">
+            <RouterLink class="menu-link" to="/mes-favoris" 	@click="closeMenu">Mes favoris</RouterLink>
+          </li>
+		      <li class="menu-item">
+            <RouterLink class="menu-link" to="/mon-compte"	@click="closeMenu">Mon compte</RouterLink>
+          </li>
+		      <li class="menu-item"><RouterLink class="menu-link" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
+          </li>
+          <li class="menu-item"><RouterLink class="menu-link" to="/connexion" 	@click="closeMenu">Connexion</RouterLink>
+          </li>
 		    </ul>
 		  </nav>
     </div>
