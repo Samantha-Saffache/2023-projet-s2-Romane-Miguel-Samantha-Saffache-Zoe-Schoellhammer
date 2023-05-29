@@ -8,7 +8,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
 </script>
 
 <template>
-    <footer class="grille lg:space-y-0">
+    <footer class="grille lg:space-y-0 flex flex-col justify-start items-start h-[538px] relative gap-[23px] px-[30px] py-[49px] bg-blanc">
       <a class="block w-20 h-20" href="/">
         <Logo />
       </a>
@@ -21,7 +21,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
         </ul>
       </nav>
   
-      <div class="col-span-3 col-start-10space-y-3">
+      <div class="col-span-3 col-start-10 space-y-3">
         <h4>CONTACT</h4>
         <address class="text-orange font-inter">
             41 Place Brogolie<br />67000 Strasbourg<br />

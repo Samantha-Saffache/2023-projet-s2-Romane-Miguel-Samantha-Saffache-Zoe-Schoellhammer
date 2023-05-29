@@ -12,10 +12,10 @@ export default {
     "colors": {
       "vert": "#bcd46e",
       "orange": "#be7015",
-      "jaune fonce": "#efdd7d",
+      "jaune": "#efdd7d",
       "beige": "#f7f8c4",
-      "fond": "#faebda",
-      "fond footer": "#ffffff"
+      "blanc": "#ffffff",
+      "vert_fonce": "#819050",
      },
      "fontSize": {
       "xs": "0.375rem",
@@ -31,7 +31,7 @@ export default {
       "unbounded": "Unbounded",
       "mulish": "Mulish",
       "bebas-neue": "Bebas Neue",
-      "inter": "Inter"
+      "inter": "Inter",
      },
      "borderRadius": {
       "none": "0",

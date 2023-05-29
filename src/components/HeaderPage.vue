@@ -11,10 +11,10 @@ function closeMenu() {
 </script>
 
 <template>
-  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white
+  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-blanc
   px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
     <div class="flex items-center">
-      <a class="block w-12 h-12" href="/">
+      <a class="block w-12 h-12 lg:w-20 lg:h-20" href="/">
         <Logo />
       </a>
     </div>
@@ -24,21 +24,23 @@ function closeMenu() {
        <SearchIcon />
       </button>
 
-      <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden"
+      <button class="relative z-10 flex h-5 w-8 flex-col justify-between fill-orange lg:hidden"
       @click="activeMenu = !activeMenu">
-        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
-         :class="{ 'translate-y-[9px] rotate-45 bg-black': activeMenu }"
+        <div class="ease h-[2px] w-full transform rounded-full bg-orange transition duration-300"
+         :class="{ 'translate-y-[9px] rotate-45 bg-orange': activeMenu }"
          ></div>
-        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
-        :class="{ 'bg-black opacity-0': activeMenu }"
+        <div class="ease h-[2px] w-full transform rounded-full bg-orange transition duration-300"
+        :class="{ 'bg-orange opacity-0': activeMenu }"
         ></div>
-        <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300"
-        :class="{ '-translate-y-[9px] -rotate-45 bg-black': activeMenu }"
+        <div class="ease h-[2px] w-full transform rounded-full bg-orange transition duration-300"
+        :class="{ '-translate-y-[9px] -rotate-45 bg-orange': activeMenu }"
         ></div>
       </button>
 
-			<nav class="invisible opacity-0 fixed inset-0 h-screen w-screen text-2xl text-white transition-all duration-300 ease-in-out lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-bold lg:uppercase lg:tracking-wide lg:text-black lg:opacity-100"
-      :class="{ '!visible opacity-100': activeMenu }"
+			<nav class="invisible opacity-0 fixed inset-0 h-screen w-screen text-2xl transition-all duration-300 ease-in-out
+      lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-bold lg:uppercase
+      lg:tracking-wide lg:opacity-100"
+      :class="{ '!visible opacity-100 bg-beige': activeMenu }"
         v-scroll-lock="activeMenu"
         >
         
@@ -57,7 +59,7 @@ function closeMenu() {
           </li>
 		      <li class="menu-item"><RouterLink class="menu-link" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
-          <li class="menu-item"><RouterLink class="menu-link" to="/connexion" 	@click="closeMenu">Connexion</RouterLink>
+          <li class="menu-item"><RouterLink class="menu-link font-bold lg:bg-vert lg:text-blanc" to="@/pages/connexion.vue" 	@click="closeMenu">Connexion</RouterLink>
           </li>
 		    </ul>
 		  </nav>
