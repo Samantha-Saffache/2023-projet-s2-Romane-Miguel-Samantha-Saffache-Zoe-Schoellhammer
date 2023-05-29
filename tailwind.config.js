@@ -15,6 +15,7 @@ export default {
       "jaune": "#efdd7d",
       "beige": "#f7f8c4",
       "blanc": "#ffffff",
+      "noir": "#000000",
       "vert_fonce": "#819050",
      },
      "fontSize": {
@@ -25,7 +26,14 @@ export default {
       "xl": "0.8125rem",
       "2xl": "0.9375rem",
       "3xl": "2.5rem",
-      "4xl": "6.25rem"
+      "4xl": "6.25rem",
+      "24px": "24px",
+      "15px": "15px",
+      "13px": "13px",
+      "10px": "10px",
+      "8px": "8px",
+      "5px": "5px",
+
      },
      "fontFamily": {
       "unbounded": "Unbounded",

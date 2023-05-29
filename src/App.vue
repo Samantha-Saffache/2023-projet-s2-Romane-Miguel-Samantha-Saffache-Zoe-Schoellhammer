@@ -2,25 +2,24 @@
 	import { RouterView } from 'vue-router'
   import HeaderPage from './components/HeaderPage.vue'
 import FooterPage from './components/FooterPage.vue'
-import Card from './components/Card.vue'
+import Card from './components/CardRecette.vue'
 
 </script>
 
 
 <template>
-  <HeaderPage />
+<HeaderPage />
   
 <main class="bg-beige">
  <RouterView />
 
  <h5 class="text-vert_fonce">recettes | produits</h5>
  
- <Card />
+ <CardRecette />
 
  
 
 
 </main>
-
 <FooterPage />
 </template>
