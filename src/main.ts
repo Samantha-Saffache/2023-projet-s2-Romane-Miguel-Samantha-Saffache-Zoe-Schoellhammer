@@ -17,7 +17,7 @@ app.use(
     history: createWebHistory(),
     routes
   })
-)
+) 
 
 app.use(V3ScrollLock, {})
 

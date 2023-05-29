@@ -41,8 +41,8 @@ export type ProduitRecord = {
 export type RecetteRecord = {
 	image?: string[]
 	nom_recette?: string
-	temps_preparation?: IsoDateString
-	temps_cuisson?: IsoDateString
+	temps_preparation?: string
+	temps_cuisson?: string
 	ingredients?: HTMLString
 	etapes?: HTMLString
 	field?: RecordIdString
