@@ -2,7 +2,7 @@
 	import { RouterView } from 'vue-router'
   import HeaderPage from './components/HeaderPage.vue'
 import FooterPage from './components/FooterPage.vue'
-import Card from './components/CardRecette.vue'
+import CardRecette from './components/CardRecette.vue'
 
 </script>
 

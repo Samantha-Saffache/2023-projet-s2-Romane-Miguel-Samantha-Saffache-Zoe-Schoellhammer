@@ -1,3 +1,3 @@
 <template>
-    <h1>Ici sera listées toutes les recettes</h1>
+    <h1>Ici seront listées toutes les recettes</h1>
   </template>
