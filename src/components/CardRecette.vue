@@ -16,7 +16,7 @@
         <p class="font-unbounded text-orange">@sylvie.adnt</p>
         <Localisation />
         <p class="font-inter text-noir ">Bourg-les-Valence</p>
-        <a class="text-uppercase text-orange font-unbounded bg-vert p-5 rounded-full uppercase text-sm" href="#">message</a>
+        <RouterLink to="/messagerie" class="text-uppercase text-orange font-unbounded bg-vert p-5 rounded-full uppercase text-sm">message</RouterLink>
       </div>
     </article>
   </template>

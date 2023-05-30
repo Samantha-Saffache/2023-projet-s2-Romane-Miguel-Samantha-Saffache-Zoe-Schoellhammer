@@ -35,7 +35,9 @@ export type AuthSystemFields<T = never> = {
 export type ProduitRecord = {
 	image?: string[]
 	nom_produit?: string
-	prix?: number
+	poids?: string
+	prix?: string
+	utilisateur?: RecordIdString
 }
 
 export type RecetteRecord = {
@@ -45,16 +47,23 @@ export type RecetteRecord = {
 	temps_cuisson?: string
 	ingredients?: HTMLString
 	etapes?: HTMLString
-	field?: RecordIdString
+	utilisateur?: RecordIdString
 }
 
+export enum UsersStatutOptions {
+	"agriculteur" = "agriculteur",
+	"particulier" = "particulier",
+}
 export type UsersRecord = {
 	name?: string
 	avatar?: string
+	statut?: UsersStatutOptions
+	economies_faites?: number
+	produits_achetes?: number
 }
 
 // Response types include system fields and match responses from the PocketBase API
-export type ProduitResponse = Required<ProduitRecord> & BaseSystemFields
+export type ProduitResponse<Texpand = unknown> = Required<ProduitRecord> & BaseSystemFields<Texpand>
 export type RecetteResponse<Texpand = unknown> = Required<RecetteRecord> & BaseSystemFields<Texpand>
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
