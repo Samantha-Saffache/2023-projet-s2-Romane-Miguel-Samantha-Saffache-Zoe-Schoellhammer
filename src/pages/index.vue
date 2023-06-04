@@ -3,16 +3,20 @@ import { RouterView } from 'vue-router';
 import HeaderPage from '@/components/HeaderPage.vue'
 import FooterPage from '@/components/FooterPage.vue'
 import CardRecette from '@/components/CardRecette.vue'
+import CardProduit from '@/components/CardProduit.vue'
 </script>
 
 <template>
   
-  
-  <main>
-    <h5 class="text-vert_fonce">recettes | produits</h5>
+    <div class="grid grid-cols-3 justify-center">
+      <RouterLink to="#" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">recettes</RouterLink>
+      <p class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">|</p>
+      <RouterLink to="#" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">produits</RouterLink>
+    </div>
      
      <CardRecette />
-  </main>
+     <CardProduit />
+
 
   
 </template>
