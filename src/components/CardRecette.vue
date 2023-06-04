@@ -5,8 +5,8 @@
  import { pb, oneRecette, allRecettes } from '../backend'
  const props = defineProps<RecetteResponse>()
 
- /*  const urlImg0 =  props.image ? pb.getFileUrl(props,  props.image, { thumb: '100x250' }) : '/image-not-found.png'
-  console.log(urlImg0) */
+ const urlImg0 =  props.image ? pb.getFileUrl(props,  props.image, { thumb: '100x250' }) : '/image-not-found.png'
+  console.log(urlImg0) 
 
 
 
@@ -18,7 +18,7 @@
     <article class="flex flex-row justify-center gap-[7px] mb-[42px]">
 
      
-        <RouterLink :to="{name: 'recette-id', params: {id}}">
+        <!-- <RouterLink :to="{name: 'recette-id', params: {id}}"> -->
           <div class="bg-blanc rounded-[15px] px-[10px] pt-[10px] pb-[30px]">
             <img src="../../public/img/crumble.png" class="rounded-[10px] w-full mb-[18px]" alt="">
             <h3>
@@ -26,14 +26,14 @@
             </h3>
          
         </div>
-      </RouterLink>
+     <!--  </RouterLink> -->
       
 
       <div class="bg-blanc rounded-[15px] flex flex-col justify-center items-center max-w-[104px] px-[6px] py-[10px] gap-[5px]">
-        <RouterLink to="#">
+       <!--  <RouterLink to="#"> -->
           <img src="../../public/img/profil.png" class="rounded-full" alt="photo de profil">
           <p class="font-unbounded text-orange text-[8px]">@sylvie.adnt</p>
-        </RouterLink>
+       <!--  </RouterLink> -->
         
         <Localisation />
         
