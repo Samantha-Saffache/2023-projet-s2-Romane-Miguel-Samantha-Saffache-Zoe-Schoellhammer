@@ -15,18 +15,18 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
       <nav class="col-span-3 col-start-7 space-y-3">
         <h4>MENU</h4>
         <ul>
-          <li class="text-orange font-inter"><a href="#">Conditions générales de ventes</a></li>
-          <li class="text-orange font-inter"><a href="#">Politique de confidentialité </a></li>
-          <li class="text-orange font-inter"><a href="#">Politique de cookies</a></li>
+          <li class="text-orange font-inter text-[13px]"><a href="#">Conditions générales de ventes</a></li>
+          <li class="text-orange font-inter text-[13px]"><a href="#">Politique de confidentialité </a></li>
+          <li class="text-orange font-inter text-[13px]"><a href="#">Politique de cookies</a></li>
         </ul>
       </nav>
   
       <div class="col-span-3 col-start-10 space-y-3">
         <h4>CONTACT</h4>
-        <address class="text-orange font-inter">
+        <address class="text-orange font-inter text-[13px]">
             41 Place Brogolie<br />67000 Strasbourg<br />
-          <a class="text-orange font-inter" href="tel:0384542727">03 84 54 27 27</a><br />
-          <a class="text-orange font-inter" href="mailto:contact@potaneo.fr">contact@potaneo.fr</a>
+          <a class="text-orange font-inter text-[13px]" href="tel:0384542727">03 84 54 27 27</a><br />
+          <a class="text-orange font-inter text-[13px]" href="mailto:contact@potaneo.fr">contact@potaneo.fr</a>
         </address>
       </div>
   
