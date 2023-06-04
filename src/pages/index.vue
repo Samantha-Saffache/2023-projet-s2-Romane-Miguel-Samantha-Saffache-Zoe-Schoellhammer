@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import HeaderPage from '@/components/HeaderPage.vue'
-import FooterPage from '@/components/FooterPage.vue'
-import CardRecette from '@/components/CardRecette.vue'
-import CardProduit from '@/components/CardProduit.vue'
+import HeaderPage from '@/components/HeaderPage.vue';
+import FooterPage from '@/components/FooterPage.vue';
+import CardRecette from '@/components/CardRecette.vue';
+import CardProduit from '@/components/CardProduit.vue';
+import RecetteHero from '@/components/RecetteHero.vue';
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import CardProduit from '@/components/CardProduit.vue'
     </div>
      
      <CardRecette />
+
+     <RecetteHero />
     
 
 
