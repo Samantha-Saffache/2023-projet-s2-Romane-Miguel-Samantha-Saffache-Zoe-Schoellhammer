@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-3xl text-orange font-unbounded  ;
+    @apply text-[24px] text-orange font-unbounded  ;
   }
 }
 

@@ -21,7 +21,7 @@ function closeMenu() {
 
     <div class="flex items-center gap-4 lg:flex-row-reverse">
       <button>
-       <SearchIcon />
+       <SearchIcon class="hover-fill-" />
       </button>
 
       <button class="relative z-10 flex h-5 w-8 flex-col justify-between fill-orange lg:hidden"
@@ -46,20 +46,20 @@ function closeMenu() {
         
 		    <ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
 		      <li class="menu-item">
-            <RouterLink class="menu-link" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
+            <RouterLink class="menu-link hover:text-vert" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
           </li>
 		      <li class="menu-item">
-            <RouterLink class="menu-link" to="/decouvrir" 	@click="closeMenu">Découvrir</RouterLink>
+            <RouterLink class="menu-link hover:text-vert" to="/decouvrir" 	@click="closeMenu">Découvrir</RouterLink>
           </li>
 		      <li class="menu-item">
-            <RouterLink class="menu-link" to="/mes-favoris" 	@click="closeMenu">Mes favoris</RouterLink>
+            <RouterLink class="menu-link hover:text-vert" to="/mes-favoris" 	@click="closeMenu">Mes favoris</RouterLink>
           </li>
 		      <li class="menu-item">
-            <RouterLink class="menu-link" to="/mon-compte"	@click="closeMenu">Mon compte</RouterLink>
+            <RouterLink class="menu-link hover:text-vert" to="/mon-compte"	@click="closeMenu">Mon compte</RouterLink>
           </li>
-		      <li class="menu-item"><RouterLink class="menu-link" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
+		      <li class="menu-item"><RouterLink class="menu-link hover:text-vert" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
-          <li class="menu-item"><RouterLink class="menu-link font-bold lg:bg-vert lg:text-blanc" to="@/pages/connexion.vue" 	@click="closeMenu">Connexion</RouterLink>
+          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="@/pages/connexion.vue" 	@click="closeMenu">Connexion</RouterLink>
           </li>
 		    </ul>
 		  </nav>

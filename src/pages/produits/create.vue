@@ -49,6 +49,15 @@ try {
           <label for="temps_cuisson" class="create-item">Prix</label>
           <input v-model="produitData.prix" type="text" id="prix" class="bg-beige border-b-[1px] border-vert rounded-md  w-full " required>
         </div>
+        <!-- sélectionner photos -->
+        <div class="mb-[37px] flex items-center justify-center w-full">
+          <label for="dropzone-file" class="flex flex-col items-center justify-center  rounded-[15px] bg-jaune px-[100px] py-[20px]  cursor-pointer">
+          <div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <span ><ImporterIcon /></span>
+        </div>
+          <input id="image" type="file" class="hidden" />
+          </label>
+        </div> 
     
         <button type="submit" class="font-unbounded font-bold text-beige bg-orange py-[14px] px-[67px] rounded-[28px]">Publier</button>
       </form>

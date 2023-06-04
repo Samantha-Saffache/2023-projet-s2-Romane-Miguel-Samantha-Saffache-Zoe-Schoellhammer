@@ -12,10 +12,10 @@ console.log("toutes les recettes depuis pb : ", recordsRecettes) */
 
 <template>
   
-    <div class="grid grid-cols-3 justify-center justify-items-center mx-[50px] lg:mx-[575px]">
-      <RouterLink to="#" class="text-xl font-unbounded font-bold text-vert_fonce mb-9 uppercase">recettes</RouterLink>
-      <p class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">|</p>
-      <RouterLink to="/produits" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">produits</RouterLink>
+    <div class="grid grid-cols-3 justify-center justify-items-center">
+      <RouterLink to="#" class="text-[15px] font-unbounded font-bold text-vert_fonce mb-9 uppercase">recettes</RouterLink>
+      <p class="text-[15px] font-unbounded text-vert_fonce mb-9 uppercase">|</p>
+      <RouterLink to="/produits" class="text-[15px] font-unbounded text-vert_fonce mb-9 uppercase">produits</RouterLink>
     </div>
      
 
