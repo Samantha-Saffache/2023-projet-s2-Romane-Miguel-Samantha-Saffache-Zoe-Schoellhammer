@@ -55,9 +55,11 @@ export enum UsersStatutOptions {
 	"particulier" = "particulier",
 }
 export type UsersRecord = {
-	name?: string
-	avatar?: string
+	nom?: string
+	nom_utilisateur?: string
+	photo_profil?: string
 	statut?: UsersStatutOptions
+	localisation?: string
 	economies_faites?: number
 	produits_achetes?: number
 }

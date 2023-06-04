@@ -1,18 +1,18 @@
 <script setup lang="ts">
-
-
+import { RouterView } from 'vue-router';
+import HeaderPage from '@/components/HeaderPage.vue'
+import FooterPage from '@/components/FooterPage.vue'
+import CardRecette from '@/components/CardRecette.vue'
 </script>
 
 <template>
-  <Hero title="Agenda" imgPath="./img/orchestre.webp" imgAlt="Orchestre">
-    <template #chapo>
-      <p class="text-xl leading-normal lg:text-3xl">
-        Lieu de création artistique, le conservatoire propose régulièrement des actions culturelles
-        ouvertes à tous.
-      </p>
-    </template>
-  </Hero>
-  <div>
-    <Card />
-  </div>
+  
+  
+  <main>
+    <h5 class="text-vert_fonce">recettes | produits</h5>
+     
+     <CardRecette />
+  </main>
+
+  
 </template>

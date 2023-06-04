@@ -11,7 +11,7 @@ function closeMenu() {
 </script>
 
 <template>
-  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-blanc
+  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-beige lg:bg-blanc
   px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
     <div class="flex items-center">
       <a class="block w-12 h-12 lg:w-20 lg:h-20" href="/">

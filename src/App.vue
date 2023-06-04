@@ -13,13 +13,8 @@ import CardRecette from './components/CardRecette.vue'
 <main class="bg-beige">
  <RouterView />
 
-  <h5 class="text-vert_fonce">recettes | produits</h5>
- 
- <CardRecette />
-
- 
-
-
 </main>
+
+
 <FooterPage />
 </template>
