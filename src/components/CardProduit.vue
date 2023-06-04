@@ -7,10 +7,11 @@
     <article class="flex flex-row justify-center gap-[7px]">
 
 <RouterLink to="#" >
-  <div class="bg-blanc rounded-[15px] px-[10px] pt-[10px] pb-[30px]">
+  <div class="bg-blanc rounded-[15px] px-[10px] py-[10px]">
     <img src="../../public/img/confiture.png" class="rounded-[10px] w-full mb-[18px]" alt="">
     <h3>
-      <p class="font-semibold font-unbounded text-orange text-[10px]">Crumble aux pommes golden</p>
+      <p class="font-semibold uppercase font-unbounded text-orange text-[10px]">Confiture de coing - 300g</p>
+      <p class="uppercase font-unbounded text-orange text-[10px]">8.00€</p>
     </h3>
   </div>
 </RouterLink>

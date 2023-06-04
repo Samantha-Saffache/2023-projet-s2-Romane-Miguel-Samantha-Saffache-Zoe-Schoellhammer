@@ -56,7 +56,6 @@ export enum UsersStatutOptions {
 }
 export type UsersRecord = {
 	nom?: string
-	nom_utilisateur?: string
 	photo_profil?: string
 	statut?: UsersStatutOptions
 	localisation?: string
