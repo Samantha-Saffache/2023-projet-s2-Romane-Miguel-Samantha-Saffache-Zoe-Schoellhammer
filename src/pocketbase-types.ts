@@ -38,6 +38,7 @@ export type ProduitRecord = {
 	poids?: string
 	prix?: string
 	utilisateur?: RecordIdString
+	favoris?: boolean
 }
 
 export type RecetteRecord = {
@@ -48,6 +49,7 @@ export type RecetteRecord = {
 	ingredients?: HTMLString
 	etapes?: HTMLString
 	utilisateur?: RecordIdString
+	favoris?: boolean
 }
 
 export enum UsersStatutOptions {
