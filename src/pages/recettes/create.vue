@@ -40,8 +40,8 @@ try {
   <div class="py-24 mx-[30px]">
 
     <div class="container mx-auto">
-      <h1 class="text-2xl font-bold font-unbounded text-orange text-[24px] my-4 text-center	">Je publie ma
-<h1 class="text-2xl font-bold font-unbounded text-vert_fonce text-[24px]  mt-4 mb-[60px] text-center leading-[0px]">recette</h1>
+      <h1 class=" font-bold font-unbounded text-orange text-[24px] my-4 text-center	">Je publie ma
+<h1 class="font-bold font-unbounded text-vert_fonce text-[24px]  mt-4 mb-[60px] text-center leading-[0px]">recette</h1>
       </h1>
       <form @submit.prevent="submitForm">
         <div class="mb-[37px]">

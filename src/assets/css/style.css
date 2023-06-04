@@ -32,7 +32,7 @@
   }
 
   .create-item {
-    @apply block font-unbounded text-10px mb-1
+    @apply block font-unbounded text-10px mb-1;
 
   }
 

@@ -30,7 +30,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
         </address>
       </div>
   
-      <div class=" col-span-3 col-start-10 space-y-3">
+      <div class="col-span-3 col-start-7 space-y-3">
         <h4>NOUS SUIVRE</h4>
         <ul class="flex gap-4">
           <li>
