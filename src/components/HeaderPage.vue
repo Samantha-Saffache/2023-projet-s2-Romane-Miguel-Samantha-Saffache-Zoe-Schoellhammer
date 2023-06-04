@@ -21,7 +21,7 @@ function closeMenu() {
 
     <div class="flex items-center gap-4 lg:flex-row-reverse">
       <button>
-       <SearchIcon class="hover-fill-" />
+       <SearchIcon class=" " />
       </button>
 
       <button class="relative z-10 flex h-5 w-8 flex-col justify-between fill-orange lg:hidden"
