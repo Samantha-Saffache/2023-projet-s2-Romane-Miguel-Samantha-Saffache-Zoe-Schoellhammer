@@ -1,19 +1,33 @@
 <script setup lang="ts">
+ import { RouterLink } from 'vue-router';
  import Localisation from '@/components/icons/localisation.vue';
+ import type { RecetteResponse } from '@/pocketbase-types';
+ import { pb, oneRecette, allRecettes } from '../backend'
+ const props = defineProps<RecetteResponse>()
+
+ /*  const urlImg0 =  props.image ? pb.getFileUrl(props,  props.image, { thumb: '100x250' }) : '/image-not-found.png'
+  console.log(urlImg0) */
+
+
+
+
 </script>
 
 <template>
  
     <article class="flex flex-row justify-center gap-[7px] mb-[42px]">
 
-      <RouterLink to="#" >
-        <div class="bg-blanc rounded-[15px] px-[10px] pt-[10px] pb-[30px]">
-          <img src="../../public/img/crumble.png" class="rounded-[10px] w-full mb-[18px]" alt="">
-          <h3>
-            <p class="font-semibold font-unbounded text-orange text-[10px]">Crumble aux pommes golden</p>
-          </h3>
+     
+        <RouterLink :to="{name: 'recette-id', params: {id}}">
+          <div class="bg-blanc rounded-[15px] px-[10px] pt-[10px] pb-[30px]">
+            <img src="../../public/img/crumble.png" class="rounded-[10px] w-full mb-[18px]" alt="">
+            <h3>
+              <p class="font-semibold font-unbounded text-orange text-[10px]">Crumble aux pommes golden</p>
+            </h3>
+         
         </div>
       </RouterLink>
+      
 
       <div class="bg-blanc rounded-[15px] flex flex-col justify-center items-center max-w-[104px] px-[6px] py-[10px] gap-[5px]">
         <RouterLink to="#">

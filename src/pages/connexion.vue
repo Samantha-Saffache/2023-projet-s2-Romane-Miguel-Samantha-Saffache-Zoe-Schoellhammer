@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import PocketBase from 'pocketbase'
 var pocketbase_ip=''
   if(import.meta.env.MODE === 'http://45.155.169.123:80')
@@ -54,3 +54,4 @@ var pocketbase_ip=''
     </main>
   </template>
   
+ -->

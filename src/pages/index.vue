@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
 import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
-import RecetteHero from '@/components/RecetteHero.vue';
+import { allRecettes, } from '@/backend';
+ const recordsRecettes = await allRecettes()
+console.log("toutes les recettes depuis pb : ", recordsRecettes)
+
+
 </script>
 
 <template>
@@ -15,9 +17,9 @@ import RecetteHero from '@/components/RecetteHero.vue';
       <RouterLink to="/produits" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">produits</RouterLink>
     </div>
      
-     <CardRecette />
+     <CardRecette /> <!-- v-for="uneRecette of recordsRecettes"  v-bind="{...uneRecette}" -->
 
-     <RecetteHero />
+    
     
 
 
