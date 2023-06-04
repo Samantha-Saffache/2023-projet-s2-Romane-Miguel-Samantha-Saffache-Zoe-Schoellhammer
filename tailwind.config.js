@@ -67,6 +67,8 @@ export default {
       "18xl": "3.5rem",
      },
 
+   
+
     extend: {},
   },
   plugins: [],

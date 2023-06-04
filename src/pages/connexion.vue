@@ -50,8 +50,8 @@ var pocketbase_ip=''
     
   
     <main>
-      <!-- <TheWelcome /> -->
-    </main>
+      <TheWelcome />
+ 
   </template>
   
- -->
+ 

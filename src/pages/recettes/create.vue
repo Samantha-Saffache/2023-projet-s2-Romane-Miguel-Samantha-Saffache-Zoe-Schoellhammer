@@ -64,9 +64,16 @@ try {
           <label for="etapes" class="create-item">Les étapes</label>
           <input v-model="recetteData.etapes" type="text" id="etapes" class="bg-beige border-b-[1px] border-vert rounded-md w-full" required>
         </div>
+
+        <div class="flex flex-col items-center mb-[57px]">
+          <button class="font-unbounded text-noir text-[20px] bg-jaune rounded-[100%] px-5 py-[10px]">+</button>
+          <p class="font-inter text-[13px]">Ajouter une étape</p>
+        </div>
+
         <!-- sélectionner photos -->
-        <div class="mb-[37px] flex items-center justify-center w-full">
-          <label for="dropzone-file" class="flex flex-col items-center justify-center  rounded-[15px] bg-jaune px-[100px] py-[20px]  cursor-pointer">
+        <p class="create-item mb-[14px]">Image</p>
+        <div class="mb-[60px] flex items-center justify-center w-full ">
+          <label for="image" class="flex flex-col items-center justify-center w-full rounded-[15px] bg-jaune px-[100px] py-[20px]  cursor-pointer">
           <div class="flex flex-col items-center justify-center pt-5 pb-6">
             <span ><ImporterIcon /></span>
         </div>
@@ -74,8 +81,8 @@ try {
           </label>
         </div> 
 
-        
-        <button type="submit" class="place-content-center font-unbounded font-bold text-beige bg-orange py-[14px] px-[67px] rounded-[28px]">Publier</button>
+        <!-- centrer ce bouton !!!! -->
+        <button type="submit" class="font-unbounded font-bold text-beige bg-orange py-[14px] px-[67px] rounded-[28px]">Publier</button>
       </form>
     </div>
 

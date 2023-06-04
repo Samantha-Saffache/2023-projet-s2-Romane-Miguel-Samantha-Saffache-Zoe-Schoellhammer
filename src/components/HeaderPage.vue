@@ -59,7 +59,7 @@ function closeMenu() {
           </li>
 		      <li class="menu-item"><RouterLink class="menu-link hover:text-vert" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
-          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="@/pages/connexion.vue" 	@click="closeMenu">Connexion</RouterLink>
+          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="/connexion" 	@click="closeMenu">Connexion</RouterLink>
           </li>
 		    </ul>
 		  </nav>
