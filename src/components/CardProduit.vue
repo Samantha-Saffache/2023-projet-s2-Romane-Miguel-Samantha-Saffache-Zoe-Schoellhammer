@@ -4,7 +4,7 @@
 
 <template>
 
-    <article class="flex flex-row justify-center gap-[7px]">
+    <article class="flex flex-row justify-center gap-[7px] mb-[42px]">
 
 <RouterLink to="#" >
   <div class="bg-blanc rounded-[15px] px-[10px] py-[10px]">

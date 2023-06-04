@@ -3,12 +3,11 @@
  import Localisation from '@/components/icons/localisation.vue';
  import type { RecetteResponse } from '@/pocketbase-types';
  import { pb, oneRecette, allRecettes } from '../backend'
+/* 
  const props = defineProps<RecetteResponse>()
 
  const urlImg0 =  props.image ? pb.getFileUrl(props,  props.image, { thumb: '100x250' }) : '/image-not-found.png'
-  console.log(urlImg0) 
-
-
+  console.log(urlImg0)  */
 
 
 </script>
