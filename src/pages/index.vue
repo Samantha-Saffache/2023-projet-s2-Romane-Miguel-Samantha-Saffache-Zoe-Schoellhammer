@@ -2,8 +2,8 @@
 import { RouterView } from 'vue-router';
 import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
-/* 
-import { allRecettes, } from '@/backend';
+
+/* import { allRecettes, } from '@/backend';
  const recordsRecettes = await allRecettes()
 console.log("toutes les recettes depuis pb : ", recordsRecettes) */
 

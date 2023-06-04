@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+ import Localisation from '@/components/icons/localisation.vue';
 </script>
 
 <template>
@@ -17,10 +17,10 @@
 </RouterLink>
 
 <div class="bg-blanc rounded-[15px] flex flex-col justify-center items-center max-w-[104px] px-[6px] py-[10px] gap-[5px]">
-  <RouterLink to="#">
+  <!-- <RouterLink to="#"> -->
     <img src="../../public/img/profil.png" class="rounded-full" alt="photo de profil">
     <p class="font-unbounded text-orange text-[8px]">@sylvie.adnt</p>
-  </RouterLink>
+ <!--  </RouterLink> -->
   
   <Localisation />
   
