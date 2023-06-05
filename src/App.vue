@@ -11,8 +11,10 @@ import CardRecette from './components/CardRecette.vue'
 <HeaderPage />
   
 <main class="bg-beige py-24 lg:py-40 px-8 lg:px-9">
- <RouterView />
 
+  <Suspense>
+ <RouterView />
+</Suspense>
 </main>
 
 

@@ -4,19 +4,20 @@ import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
 
 
-/* import { allRecettes, } from '@/backend';
+ import { allRecettes, } from '@/backend';
  const recordsRecettes = await allRecettes()
-console.log("toutes les recettes depuis pb : ", recordsRecettes) */
+console.log(recordsRecettes)  
 
-/* code pracht : */
-import { pb, oneRecette, } from '../backend';
+
+
+/* import { pb, oneRecette, } from '../backend';
 
 const props = defineProps<{
   id: string
 }>()
 const uneRecette = await oneRecette(props.id)
 console.log(uneRecette)
-const utilisateur = uneRecette.expand.utilisateur
+const utilisateur = uneRecette.expand.utilisateur */
 
 
 
@@ -32,7 +33,7 @@ const utilisateur = uneRecette.expand.utilisateur
      
 
      <section class="lg:grid lg:grid-cols-4">
-       <CardRecette /> <!-- v-for="uneRecette of recordsRecettes"  v-bind="{...uneRecette}" -->
+       <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
        <!-- <CardUtilisateurMini v-bind="{... utilisateur}"/> -->
      </section>
 
