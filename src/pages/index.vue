@@ -33,8 +33,11 @@ const utilisateur = uneRecette.expand.utilisateur */
      
 
      <section class="lg:grid lg:grid-cols-4">
-       <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
-       <!-- <CardUtilisateurMini v-bind="{... utilisateur}"/> -->
+
+       <article class="flex flex-row justify-center gap-[7px] mb-[42px]"> 
+         <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
+         <!-- <CardUtilisateurMini v-bind="{... utilisateur}"/> -->
+       </article>
      </section>
 
 

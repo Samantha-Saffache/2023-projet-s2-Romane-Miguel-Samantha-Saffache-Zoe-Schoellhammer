@@ -55,3 +55,7 @@ export async function createRecette(recetteData: RecetteRecord) {
     return recordsProduits;
    
 }
+
+export async function oneUtilisateur(id: string) {
+  return await pb.collection('users').getOne<UsersResponse>(id)
+}
