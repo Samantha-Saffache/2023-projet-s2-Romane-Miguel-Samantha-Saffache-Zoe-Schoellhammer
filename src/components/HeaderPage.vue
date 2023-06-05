@@ -5,11 +5,16 @@
   import { RouterLink } from 'vue-router';
   import Auth from '../components/Auth.vue'
   import { logout, estConnecté, login } from '@/auth'
+  import { UsersResponse } from '@/pocketbase-types';
+  const props:UsersResponse = defineProps<UsersResponse>()
+
   const activeMenu = ref(false)
 
 function closeMenu() {
   activeMenu.value = false
 }
+
+
 </script>
 
 <template>
@@ -66,7 +71,7 @@ function closeMenu() {
           <button v-if="estConnecté" @click="logout" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">{{ estConnecté.username }}</button>
                         <button v-else @click="login" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">Se connecter</button> -->
 
-                      
+
 		    </ul>
 		  </nav>
     </div>

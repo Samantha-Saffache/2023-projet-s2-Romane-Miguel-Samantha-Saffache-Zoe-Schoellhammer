@@ -1,5 +1,5 @@
 import { pb } from '@/backend'
-import type { AuthSystemFields, UsersRecord, UsersResponse } from '@/pocketbase-types'
+import type { AuthSystemFields, UsersRecord, UsersResponse } from '@/'
 import { ref } from 'vue'
 
 type MaybeUser = UsersResponse | null
@@ -12,8 +12,8 @@ export const estConnecté = ref(null as MaybeUser)
 
 // Surveille la connecxion pour maintenir `estConnecté` à jour                                    
 pb.authStore.onChange(() => {
-  estConnecté.value = pb.authStore.model as MaybeUser
-}, true) //true pour le tester de suite
+  estConnecté.value = pb.authStore.model as MaybeUser}, true)
+ //true pour le tester de suite
 
 /**
  * Connexion par GitHub
