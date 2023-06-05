@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { createProduit } from '@/backend';
 import type { ProduitRecord } from '@/pocketbase-types';
+import ImporterIcon from '@/components/icons/IconImporter.vue';
 
 const produitData = ref<ProduitRecord>({
   nom_produit: '',
