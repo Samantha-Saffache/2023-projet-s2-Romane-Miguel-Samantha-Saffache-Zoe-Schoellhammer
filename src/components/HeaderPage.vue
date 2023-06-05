@@ -57,10 +57,7 @@ function closeMenu() {
             <RouterLink class="menu-link hover:text-vert" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
           </li>
 		      <li class="menu-item">
-            <RouterLink class="menu-link hover:text-vert" to="/decouvrir" 	@click="closeMenu">Découvrir</RouterLink>
-          </li>
-		      <li class="menu-item">
-            <RouterLink class="menu-link hover:text-vert" to="/mes-favoris" 	@click="closeMenu">Mes favoris</RouterLink>
+            <RouterLink class="menu-link hover:text-vert" to="/" 	@click="closeMenu">Découvrir</RouterLink>
           </li>
 		      <li class="menu-item">
             <RouterLink class="menu-link hover:text-vert" to="/mon-compte"	@click="closeMenu">Mon compte</RouterLink>

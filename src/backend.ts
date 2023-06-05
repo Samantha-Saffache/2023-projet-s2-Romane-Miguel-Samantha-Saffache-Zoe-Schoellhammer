@@ -62,4 +62,7 @@ export async function oneUtilisateur(id: string) {
 
 /* faire une fonction pour voir les favoris d'un utilisateur */
 export async function favorisOneUtilisateur(id: string) {
-  return await pb.collection('users').getFullList<UsersResponse>(id, {expand : 'users(favoris)'})
+  return await pb.collection('users').getFullList<UsersResponse>(id, { expand: 'users(favoris_recettes)(favoris_produits)' })
+
+}
+

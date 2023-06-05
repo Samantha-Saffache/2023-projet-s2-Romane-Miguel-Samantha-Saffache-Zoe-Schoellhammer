@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { oneUtilisateur } from '@/backend';
+import { oneUtilisateur, favorisOneUtilisateur } from '@/backend';
 import { RouterLink } from 'vue-router';
 import IconPanier from '@/components/icons/IconPanier.vue'
 import { pb, } from '@/backend';
@@ -7,7 +7,6 @@ import IconProduitsAchetes from '@/components/icons/IconProduitsAchetes.vue';
 import IconEconomies from '@/components/icons/IconEconomies.vue';
 import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
-import RecetteRecord from '@/pocketbase-types.ts';
 
 const props = defineProps<{
   id: string
@@ -17,6 +16,9 @@ console.log(unUtilisateur)
 
 const urlImg0 =  unUtilisateur.photo_profil ? pb.getFileUrl(unUtilisateur, unUtilisateur.photo_profil[0], { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg0)
+
+const recordsFavoris = await favorisOneUtilisateur()
+console.log("favoris d'un utilisateur : ", recordsFavoris)
 </script>
 
 <template>
@@ -52,10 +54,13 @@ console.log(urlImg0)
     <section>
         <h2>Ce que vous recommandez</h2>
         
+        <!--a importer en haut-->
         <CardRecette v-for="uneRecette of RecetteRecord" v-bind="{ ...uneRecette }" />
 
-
-
+<div>
+    <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] ">+</button>
+    <p class="font-inter text-noir text-[13px]">Publier du contenu</p>
+</div>
 
 
     </section>
