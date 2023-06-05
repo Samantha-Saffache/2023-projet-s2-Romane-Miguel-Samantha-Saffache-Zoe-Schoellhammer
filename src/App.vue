@@ -8,8 +8,10 @@ import CardRecette from './components/CardRecette.vue'
 
 
 <template>
-<HeaderPage />
-  
+  <Suspense>
+    <HeaderPage />
+  </Suspense>
+
 <main class="bg-beige py-24 lg:py-40 px-8 lg:px-9">
 
   <Suspense>
