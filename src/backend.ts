@@ -59,3 +59,7 @@ export async function createRecette(recetteData: RecetteRecord) {
 export async function oneUtilisateur(id: string) {
   return await pb.collection('users').getOne<UsersResponse>(id)
 }
+
+/* faire une fonction pour voir les favoris d'un utilisateur */
+export async function favorisOneUtilisateur(id: string) {
+  return await pb.collection('users').getFullList<UsersResponse>(id, {expand : 'users(favoris)'})

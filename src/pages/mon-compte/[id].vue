@@ -4,6 +4,10 @@ import { RouterLink } from 'vue-router';
 import IconPanier from '@/components/icons/IconPanier.vue'
 import { pb, } from '@/backend';
 import IconProduitsAchetes from '@/components/icons/IconProduitsAchetes.vue';
+import IconEconomies from '@/components/icons/IconEconomies.vue';
+import CardRecette from '@/components/CardRecette.vue';
+import CardProduit from '@/components/CardProduit.vue';
+import RecetteRecord from '@/pocketbase-types.ts';
 
 const props = defineProps<{
   id: string
@@ -17,7 +21,7 @@ console.log(urlImg0)
 
 <template>
 
-<div class="" >
+<section class="" >
     <img class="rounded-full" :src="urlImg0" alt="">
     <div>
         <h2>{{ unUtilisateur.nom }}</h2>
@@ -28,13 +32,33 @@ console.log(urlImg0)
         </RouterLink>
     </div>
 
-    <div class="bg-blanc rounded-[15px] flex flex-col">
-        <p>Produits achetés</p>
-        <IconProduitsAchetes />
-        <p>{{ unUtilisateur.produits_achetes }}</p>
+    <div class="grid grid-cols-2">
+
+        <div class="bg-blanc rounded-[15px] ">
+            <p>Economies faites</p>
+            <IconEconomies />
+            <p>{{ unUtilisateur.economies_faites }}</p>
+        </div>
+
+        <div class="bg-blanc rounded-[15px] ">
+            <p>Produits achetés</p>
+            <IconProduitsAchetes />
+            <p>{{ unUtilisateur.produits_achetes }}</p>
+        </div>
 
 
-    </div>
+    </section>
+
+    <section>
+        <h2>Ce que vous recommandez</h2>
+        
+        <CardRecette v-for="uneRecette of RecetteRecord" v-bind="{ ...uneRecette }" />
+
+
+
+
+
+    </section>
 
 
 
