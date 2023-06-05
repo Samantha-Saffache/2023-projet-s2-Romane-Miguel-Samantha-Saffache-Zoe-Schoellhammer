@@ -58,7 +58,7 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
         <CardRecette v-for="uneRecette of RecetteRecord" v-bind="{ ...uneRecette }" />
 
 <div>
-    <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] ">+</button>
+    <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] text-center ">+</button>
     <p class="font-inter text-noir text-[13px]">Publier du contenu</p>
 </div>
 
