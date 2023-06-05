@@ -23,7 +23,8 @@ console.log("toutes les recettes depuis pb : ", recordsRecettes) */
        <CardRecette /> <!-- v-for="uneRecette of recordsRecettes"  v-bind="{...uneRecette}" -->
      </section>
 
-    
+
+     
     
 
 
