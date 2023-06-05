@@ -9,6 +9,7 @@ import { pb, oneRecette, } from '../../backend';
 }>()
 const uneRecette = await oneRecette(props.id)
 console.log(uneRecette)
+const utilisateur = uneRecette.expand.utilisateur
 </script>
  */
 
@@ -22,6 +23,7 @@ console.log(uneRecette)
             <img class="object-contain" src="../../public/img/profil.png" alt="">
             <div class="flex flex-col">
                 <p class="font-unbounded text-orange text-[10px]">{{ uneRecette.utilisateur }}</p>
+                // <CardUtilisateurMini v-bind="{... utilisateur}"/>
                 <p class="font-unbounded text-orange font-semibold text-[15px]">{{ uneRecette.nom_recette }}</p>
             </div>
             <FavorisIcon class="w-30 h-30" />

@@ -34,7 +34,7 @@ export async function createRecette(recetteData: RecetteRecord) {
 
   /* affiche une recette */
   export async function oneRecette(id: string) {
-    return await pb.collection('recette').getOne<RecetteResponse>(id, { expand: 'recette(utilisateur)' })
+    return await pb.collection('recette').getOne<RecetteResponse>(id, { expand: 'utilisateur' })
   }
 
   /* affiche toutes les recettes */

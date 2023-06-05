@@ -11,7 +11,7 @@ import CardProduit from '@/components/CardProduit.vue'
       <RouterLink to="#" class="text-xl font-unbounded font-bold text-vert_fonce mb-9 uppercase">produits</RouterLink>
     </div>
      
-    <CardProduit />
+    <CardProduit  />
     
 
 

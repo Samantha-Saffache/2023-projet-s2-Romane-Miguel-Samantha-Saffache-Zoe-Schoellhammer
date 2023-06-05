@@ -1,12 +1,12 @@
 <script setup lang="ts">
  import Localisation from '@/components/icons/localisation.vue';
  import { pb } from '@/backend'
-import type { ProduitResponse } from '../pocketbase-types'
+ import type { ProduitResponse } from '../pocketbase-types'
 
   const props: ProduitResponse = defineProps<ProduitResponse>()
 
 
-  const urlImg0 =  props.image ? pb.getFileUrl(props, props.image, { thumb: '100x250' }) : '/image-not-found.png'
+  const urlImg0 =  props.image ? pb.getFileUrl(props, props.image[0], { thumb: '100x250' }) : '/image-not-found.png'
   console.log(urlImg0)
 
   const url = `/produits/${props.id}`
@@ -37,9 +37,7 @@ import type { ProduitResponse } from '../pocketbase-types'
     <p class="font-unbounded text-orange text-[8px]">{{ props.utilisateur }}</p>
 
  <!--  </RouterLink> -->
-  
   <Localisation />
-  
   <p class="font-inter text-noir text-[13px] text-center leading-4 mb-[5px]">{{ props.localisation }}</p>
   <RouterLink to="/messagerie" class="text-uppercase text-orange font-unbounded font-bold bg-vert w-full text-center py-[10px] rounded-[33px] uppercase text-sm">message</RouterLink>
 </div>
