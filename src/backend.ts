@@ -39,7 +39,7 @@ export async function createRecette(recetteData: RecetteRecord) {
 
   /* affiche toutes les recettes */
   export async function allRecettes() {
-    const recordsRecettes = await pb.collection("recette").getFullList();
+    const recordsRecettes = await pb.collection("recette").getFullList<RecetteResponse>();
     return recordsRecettes;
 
 }
@@ -51,7 +51,7 @@ export async function createRecette(recetteData: RecetteRecord) {
 
  /* affiche tous les produits */ 
   export async function allProduits() {
-    const recordsProduits = await pb.collection("produit").getFullList();
+    const recordsProduits = await pb.collection("produit").getFullList<ProduitResponse>();
     return recordsProduits;
    
 }
