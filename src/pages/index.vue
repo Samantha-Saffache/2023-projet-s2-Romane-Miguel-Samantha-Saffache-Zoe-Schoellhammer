@@ -9,8 +9,8 @@ import type { UsersResponse } from '@/pocketbase-types';
  const recordsRecettes = await allRecettes()
 console.log(recordsRecettes)  
 
-const recordUser = await oneUtilisateur()
-console.log(recordUser) 
+/* const recordUser = await oneUtilisateur()
+console.log(recordUser)  */
 
 
 
@@ -40,19 +40,16 @@ const utilisateur = uneRecette.expand.utilisateur */
 
      <section class="lg:grid lg:grid-cols-4">
 
-       <article class="flex flex-row justify-center gap-[7px] mb-[42px]"> 
-         <ul>
-           <li>
+       <!-- <article class="flex flex-row justify-center gap-[7px] mb-[42px]">  -->
+         
              <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
-           </li>
-            <li>
-              <CardUtilisateur v-for="unUtilisateur of recordUser" v-key="unUtilisateur.id" v-bind="{...unUtilisateur}" />
-            </li>
-         </ul>
+           
+            <!--   <CardUtilisateur v-for="unUtilisateur of recordUser" v-key="unUtilisateur.id" v-bind="{...unUtilisateur}" /> -->
+        
         
         
          <!-- <CardUtilisateurMini v-bind="{... utilisateur}"/> -->
-       </article>
+      <!--  </article> -->
      </section>
 
 
