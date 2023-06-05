@@ -6,6 +6,9 @@
  import { pb, oneRecette, allRecettes } from '../backend'
 
  const props: UsersResponse = defineProps<UsersResponse>()
+    const urlImg0 =  props.photo_profil ? pb.getFileUrl(props, props.photo_profil[0], { thumb: '100x250' }) : '/image-not-found.png'
+  console.log(urlImg0)
+
 </script>
 
 <template>

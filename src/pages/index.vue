@@ -2,11 +2,17 @@
 import { RouterView } from 'vue-router';
 import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
+import CardUtilisateur from '@/components/CardUtilisateur.vue';
+ import { allRecettes, oneUtilisateur } from '@/backend';
+import type { UsersResponse } from '@/pocketbase-types';
 
-
- import { allRecettes, } from '@/backend';
  const recordsRecettes = await allRecettes()
 console.log(recordsRecettes)  
+
+const recordUser = await oneUtilisateur()
+console.log(recordUser) 
+
+
 
 
 
@@ -35,7 +41,16 @@ const utilisateur = uneRecette.expand.utilisateur */
      <section class="lg:grid lg:grid-cols-4">
 
        <article class="flex flex-row justify-center gap-[7px] mb-[42px]"> 
-         <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
+         <ul>
+           <li>
+             <CardRecette  v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}" /> <!-- v-for="uneRecette of recordsRecettes" v-key="uneRecette.id" v-bind="{...uneRecette}"  -->
+           </li>
+            <li>
+              <CardUtilisateur v-for="unUtilisateur of recordUser" v-key="unUtilisateur.id" v-bind="{...unUtilisateur}" />
+            </li>
+         </ul>
+        
+        
          <!-- <CardUtilisateurMini v-bind="{... utilisateur}"/> -->
        </article>
      </section>

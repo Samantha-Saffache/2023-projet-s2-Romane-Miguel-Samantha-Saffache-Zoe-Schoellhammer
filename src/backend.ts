@@ -51,7 +51,7 @@ export async function createRecette(recetteData: RecetteRecord) {
 
  /* affiche tous les produits */ 
   export async function allProduits() {
-    const recordsProduits = await pb.collection("produit").getFullList<ProduitResponse>();
+    const recordsProduits = await pb.collection('produit').getFullList<ProduitResponse>();
     return recordsProduits;
    
 }

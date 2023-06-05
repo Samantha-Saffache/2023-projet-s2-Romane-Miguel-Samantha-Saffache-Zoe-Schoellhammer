@@ -1,5 +1,5 @@
 import { pb } from '@/backend'
-import type { AuthSystemFields, UsersRecord, UsersResponse } from '@types'
+import type { AuthSystemFields, UsersRecord, UsersResponse } from '@/pocketbase-types'
 import { ref } from 'vue'
 
 type MaybeUser = UsersResponse | null
@@ -25,7 +25,7 @@ pb.authStore.onChange(() => {
  * Dans le backend de Netlify : saisir ID et secret
  */
 export async function login() {
-  const authData = await pb.collection('users').authWithOAuth2({ provider: 'github' })
+  const authData = await pb.collection('users').authWithOAuth2({ provider: 'google' })
   console.log(authData)
   return authData
 }
