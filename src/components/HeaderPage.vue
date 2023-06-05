@@ -3,6 +3,7 @@
   import Logo from '@/components/icons/Logo.vue';
   import SearchIcon from '@/components/icons/IconSearch.vue';
   import { RouterLink } from 'vue-router';
+  import Auth from '../components/Auth.vue'
   const activeMenu = ref(false)
 
 function closeMenu() {
@@ -59,8 +60,10 @@ function closeMenu() {
           </li>
 		      <li class="menu-item"><RouterLink class="menu-link hover:text-vert" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
-          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="/connexion" 	@click="closeMenu">Connexion</RouterLink>
+          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="/connexion" 	@click="closeMenu"> <Auth /> </RouterLink>
+
           </li>
+          
 		    </ul>
 		  </nav>
     </div>

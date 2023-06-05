@@ -6,7 +6,7 @@ import CardProduit from '@/components/CardProduit.vue'
 <template>
   
     <div class="grid grid-cols-3 justify-center justify-items-center mx-[50px] lg:mx-[575px]">
-      <RouterLink to="#" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">recettes</RouterLink>
+      <RouterLink to="/" class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">recettes</RouterLink>
       <p class="text-xl font-unbounded text-vert_fonce mb-9 uppercase">|</p>
       <RouterLink to="#" class="text-xl font-unbounded font-bold text-vert_fonce mb-9 uppercase">produits</RouterLink>
     </div>

@@ -38,7 +38,6 @@ export type ProduitRecord = {
 	poids?: string
 	prix?: string
 	utilisateur?: RecordIdString
-	favoris?: boolean
 }
 
 export type RecetteRecord = {
@@ -49,7 +48,6 @@ export type RecetteRecord = {
 	ingredients?: HTMLString
 	etapes?: HTMLString
 	utilisateur?: RecordIdString
-	favoris?: boolean
 }
 
 export enum UsersStatutOptions {
@@ -63,12 +61,14 @@ export type UsersRecord = {
 	localisation?: string
 	economies_faites?: number
 	produits_achetes?: number
+	favoris_recettes?: RecordIdString[]
+	favoris_produits?: RecordIdString[]
 }
 
 // Response types include system fields and match responses from the PocketBase API
 export type ProduitResponse<Texpand = unknown> = Required<ProduitRecord> & BaseSystemFields<Texpand>
 export type RecetteResponse<Texpand = unknown> = Required<RecetteRecord> & BaseSystemFields<Texpand>
-export type UsersResponse = Required<UsersRecord> & AuthSystemFields
+export type UsersResponse<Texpand = unknown> = Required<UsersRecord> & AuthSystemFields<Texpand>
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
