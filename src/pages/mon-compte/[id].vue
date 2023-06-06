@@ -18,8 +18,8 @@ console.log(unUtilisateur)
 const urlImg0 =  unUtilisateur.photo_profil ? pb.getFileUrl(unUtilisateur, unUtilisateur.photo_profil[0], { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg0)
 
-const recordsFavoris = await favorisOneUtilisateur()
-console.log("favoris d'un utilisateur : ", recordsFavoris)
+/* const recordsFavoris = await favorisOneUtilisateur()
+console.log("favoris d'un utilisateur : ", recordsFavoris) */
 </script>
 
 <template>
@@ -27,7 +27,7 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
 <section class="" >
     <img class="rounded-full" :src="urlImg0" alt="">
     <div>
-        <h2>{{ estConnecté.unUtilisateur.nom }}</h2>
+        <h2>{{ estConnecté.nom }}</h2>
         <p class="font-unbounded text-noir text-[10px]">{{ unUtilisateur.username }}</p>
         <RouterLink to="/mon-panier" class="bg-vert rounded-[25px]">
         <IconPanier />
@@ -56,8 +56,8 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
         <h2>Ce que vous recommandez</h2>
         
         <!--a importer en haut pour mettre nos favoris-->
-        <CardRecette v-for="uneRecette of recordsFavoris" v-bind="{ ...uneRecette }" />
-
+       <!--  <CardRecette v-for="uneRecette of recordsFavoris" v-bind="{ ...uneRecette }" />
+ -->
 <div>
     <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] text-center ">+</button>
     <p class="font-inter text-noir text-[13px]">Publier du contenu</p>

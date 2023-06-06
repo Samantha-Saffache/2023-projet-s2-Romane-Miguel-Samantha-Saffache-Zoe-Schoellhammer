@@ -1,5 +1,5 @@
 import { pb } from '@/backend'
-import type { AuthSystemFields, UsersRecord, UsersResponse } from '@/'
+import type { AuthSystemFields, UsersRecord, UsersResponse } from '@/pocketbase-types'
 import { ref } from 'vue'
 
 type MaybeUser = UsersResponse | null
