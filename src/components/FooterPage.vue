@@ -15,9 +15,7 @@ import YoutubeIcon from '@/components/icons/IconYoutube.vue' ;
       <nav class="col-span-3 col-start-7 space-y-3">
         <h4>MENU</h4>
         <ul>
-          <li class="text-orange font-inter text-[13px]"><a href="#">Conditions générales de ventes</a></li>
-          <li class="text-orange font-inter text-[13px]"><a href="#">Politique de confidentialité </a></li>
-          <li class="text-orange font-inter text-[13px]"><a href="#">Politique de cookies</a></li>
+          <li class="text-orange font-inter text-[13px]"><a href="/conditions-generales">Conditions générales de vente & d'utilisation</a></li>
         </ul>
       </nav>
   
