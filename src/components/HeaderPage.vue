@@ -57,9 +57,7 @@ console.log(unUtilisateur) */
         >
         
 		    <ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
-		      <li class="menu-item">
-            <RouterLink class="menu-link hover:text-vert" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
-          </li>
+		    
 
 		      <li class="menu-item">
             <RouterLink class="menu-link hover:text-vert" to="/" 	@click="closeMenu">Découvrir</RouterLink>
@@ -72,11 +70,10 @@ console.log(unUtilisateur) */
 		      <li class="menu-item"><RouterLink class="menu-link hover:text-vert" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
 
-          <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="/connexion" 	@click="closeMenu"> <Auth /> </RouterLink>
-          </li>
-          <!-- 
+          
+          
           <button v-if="estConnecté" @click="logout" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">{{ estConnecté.username }}</button>
-          <button v-else @click="login" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">Se connecter</button> -->
+          <button v-else @click="login" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">Connexion</button> 
 
 
        <!--    <li v-for="uneMaison of maisonsListe" :v-key="unUtilisateur.id">  

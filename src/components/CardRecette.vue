@@ -10,7 +10,7 @@
 const urlImg0 =  props.image ? pb.getFileUrl(props, props.image[0], { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg0)
 
-const url = `/recette/${props.id}`
+const url = `/recettes/${props.id}`
 
 
 /*  const recordUser = await oneUtilisateur()
