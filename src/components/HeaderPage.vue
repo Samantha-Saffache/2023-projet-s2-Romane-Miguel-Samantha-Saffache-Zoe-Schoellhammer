@@ -5,7 +5,8 @@
   import { RouterLink } from 'vue-router';
   import Auth from '../components/Auth.vue'
   import { logout, estConnecté, login } from '@/auth'
-  import { UsersResponse } from '@/pocketbase-types'
+  import type { UsersResponse } from '@/pocketbase-types'
+import { oneUtilisateur } from '@/backend';
 
   const props:UsersResponse = defineProps<UsersResponse>()
 
@@ -14,6 +15,9 @@
 function closeMenu() {
   activeMenu.value = false
 }
+
+/* const unUtilisateur = await oneUtilisateur(props.id)
+console.log(unUtilisateur) */
 
 
 </script>
@@ -56,20 +60,30 @@ function closeMenu() {
 		      <li class="menu-item">
             <RouterLink class="menu-link hover:text-vert" to="/mes-notifications" 	@click="closeMenu">Mes notifications</RouterLink>
           </li>
+
 		      <li class="menu-item">
             <RouterLink class="menu-link hover:text-vert" to="/" 	@click="closeMenu">Découvrir</RouterLink>
           </li>
-		      <li class="menu-item">
-            <RouterLink class="menu-link hover:text-vert" to="/mon-compte"	@click="closeMenu">Mon compte</RouterLink>
-            
-          </li>
+
+		      <li  class="menu-item">
+            <RouterLink class="menu-link hover:text-vert" to="" 	@click="closeMenu">Mon compte</RouterLink>
+          </li>  
+          
 		      <li class="menu-item"><RouterLink class="menu-link hover:text-vert" to="/messagerie" 	@click="closeMenu">Messagerie</RouterLink>
           </li>
+
           <li class="menu-item"><RouterLink class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc" to="/connexion" 	@click="closeMenu"> <Auth /> </RouterLink>
-          </li><!-- 
+          </li>
+          <!-- 
           <button v-if="estConnecté" @click="logout" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">{{ estConnecté.username }}</button>
           <button v-else @click="login" class="menu-link hover:text-vert_fonce font-bold lg:bg-vert lg:text-blanc">Se connecter</button> -->
 
+
+       <!--    <li v-for="uneMaison of maisonsListe" :v-key="unUtilisateur.id">  
+        <RouterLink :to="{name: 'users-id', params: {id: unUtilisateur.id }}" >
+        </RouterLink> -->
+          
+        
 
 		    </ul>
 		  </nav>

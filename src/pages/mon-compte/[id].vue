@@ -48,14 +48,14 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
             <p>{{ unUtilisateur.produits_achetes }}</p>
         </div>
 
-
+    </div>  
     </section>
 
     <section>
         <h2>Ce que vous recommandez</h2>
         
-        <!--a importer en haut-->
-        <CardRecette v-for="uneRecette of RecetteRecord" v-bind="{ ...uneRecette }" />
+        <!--a importer en haut pour mettre nos favoris-->
+        <CardRecette v-for="uneRecette of recordsFavoris" v-bind="{ ...uneRecette }" />
 
 <div>
     <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] text-center ">+</button>
@@ -63,16 +63,6 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
 </div>
 
 
-    </section>
-
-
-
-
-
-
-
-
-
-</div>
+    </section>  
 
 </template>
