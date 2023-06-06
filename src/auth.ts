@@ -10,7 +10,7 @@ type MaybeUser = UsersResponse | null
  */
 export const estConnecté = ref(null as MaybeUser)
 
-// Surveille la connecxion pour maintenir `estConnecté` à jour                                    
+// Surveille la connexion pour maintenir `estConnecté` à jour                                    
 pb.authStore.onChange(() => {
   estConnecté.value = pb.authStore.model as MaybeUser}, true)
  //true pour le tester de suite
