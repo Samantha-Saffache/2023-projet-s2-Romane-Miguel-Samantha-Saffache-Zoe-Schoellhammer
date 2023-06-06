@@ -24,45 +24,49 @@ console.log("favoris d'un utilisateur : ", recordsFavoris) */
 
 <template>
 
-<section class="" >
-    <img class="rounded-full" :src="urlImg0" alt="">
-    <div>
-        <h2>{{ unUtilisateur.nom }}</h2>
-        <p class="font-unbounded text-noir text-[10px]">{{ unUtilisateur.username }}</p>
-        <RouterLink to="/mon-panier" class="bg-vert rounded-[25px]">
-        <IconPanier />
-        <p class="font-inter text-noir text-[10px] ">Voir mon panier</p>    
-        </RouterLink>
+<section class="lg:flex lg:flex-wrap gap-[80px] justify-center items-center" >
+    <div class="flex justify-center items-center gap-[34px] mb-[48px]">
+        <img class="rounded-[100%] w-[137px]" src="../../../public/img/profil.png" alt="">
+        <div class="flex flex-col gap-[15px]">
+            <h2 class="font-unbounded font-semibold text-noir text-[15px]">{{ unUtilisateur.nom }}</h2>
+            <p class="font-unbounded text-orange text-[10px]">@{{ unUtilisateur.username }}</p>
+            <RouterLink to="/mon-panier">
+            <div class="bg-vert rounded-[25px] flex flex-row items-center justify-center py-[5px] gap-[5px] ">
+                <IconPanier />
+                <p class="font-inter text-noir text-[10px] ">Voir mon panier</p>
+            </div>
+            </RouterLink>
+        </div>
     </div>
 
-    <div class="grid grid-cols-2">
+    <div class="flex flex-row justify-center gap-[10px]">
 
-        <div class="bg-blanc rounded-[15px] ">
-            <p>Economies faites</p>
+        <div class="bg-blanc rounded-[15px] px-[20px] py-[20px] flex flex-col items-center gap-[11px] ">
+            <p class="font-unbounded font-medium text-noir text-[10px]">Economies faites</p>
             <IconEconomies />
-            <p>{{ unUtilisateur.economies_faites }}</p>
+            <p class="font-unbounded text-orange font-semibold ">{{ unUtilisateur.economies_faites }}</p>
         </div>
 
-        <div class="bg-blanc rounded-[15px] ">
-            <p>Produits achetés</p>
+        <div class="bg-blanc rounded-[15px] px-[20px] py-[20px] flex flex-col items-center gap-[11px] ">
+            <p class="font-unbounded font-medium text-noir text-[10px]">Produits achetés</p>
             <IconProduitsAchetes />
-            <p>{{ unUtilisateur.produits_achetes }}</p>
+            <p class="font-unbounded text-orange font-semibold ">{{ unUtilisateur.produits_achetes }}</p>
         </div>
 
     </div>  
     </section>
 
     <section>
-        <h2>Ce que vous recommandez</h2>
+        <h2 class="font-unbounded font-semibold text-noir text-[15px] text-center mt-[67px]">Ce que vous recommandez</h2>
         
         <!--a importer en haut pour mettre nos favoris-->
        <!--  <CardRecette v-for="uneRecette of recordsFavoris" v-bind="{ ...uneRecette }" />
  -->
-<RouterLink RouterLink to="/publication"> 
-<div>
-    <button class="mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] text-center ">+</button>
-    <p class="font-inter text-noir text-[13px]">Publier du contenu</p>
-</div>
+<RouterLink to="/publication"> 
+    <div class="flex flex-col items-center gap-[13px]">
+        <button class="px-[30px] py-[10px] mt-[200px] bg-jaune rounded-[100%] font-unbounded font-light text-noir text-[50px] text-center">+</button>
+        <p class="font-inter text-noir text-[13px]">Publier du contenu</p>
+    </div>
 </RouterLink>
 
 
