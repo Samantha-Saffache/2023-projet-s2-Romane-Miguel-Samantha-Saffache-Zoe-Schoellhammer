@@ -7,6 +7,7 @@ import IconProduitsAchetes from '@/components/icons/IconProduitsAchetes.vue';
 import IconEconomies from '@/components/icons/IconEconomies.vue';
 import CardRecette from '@/components/CardRecette.vue';
 import CardProduit from '@/components/CardProduit.vue';
+import { estConnecté } from '@/auth'
 
 const props = defineProps<{
   id: string
@@ -26,7 +27,7 @@ console.log("favoris d'un utilisateur : ", recordsFavoris)
 <section class="" >
     <img class="rounded-full" :src="urlImg0" alt="">
     <div>
-        <h2>{{ unUtilisateur.nom }}</h2>
+        <h2>{{ estConnecté.unUtilisateur.nom }}</h2>
         <p class="font-unbounded text-noir text-[10px]">{{ unUtilisateur.username }}</p>
         <RouterLink to="/mon-panier" class="bg-vert rounded-[25px]">
         <IconPanier />
