@@ -51,7 +51,7 @@ console.log(recordUser)   */
         
         <Localisation />
         
-        <p class="font-inter text-noir text-[13px] text-center leading-4 mb-[5px]">{{ props.localisation }}</p>
+        <p class="font-inter text-noir text-[13px] text-center leading-4 mb-[5px]"><!-- {{ props.localisation }} --></p>
         <RouterLink to="/messagerie" class="text-uppercase text-orange font-unbounded font-bold bg-vert w-full text-center py-[10px] rounded-[33px] uppercase text-sm">message</RouterLink>
       </div> 
 
